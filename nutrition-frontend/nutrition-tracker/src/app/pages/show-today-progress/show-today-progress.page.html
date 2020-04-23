@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Today-progress</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="title">
+        Name
+      </ion-col>
+      <ion-col class="title">
+        Calories
+      </ion-col>
+      <ion-col class="title">
+        Protein
+      </ion-col>
+      <ion-col class="title">
+        Carbs
+      </ion-col>
+    </ion-row>
+    <ion-row *ngFor="let record of records">
+      <ion-col class="record">
+        {{record.Name}}
+      </ion-col>
+      <ion-col class="record">
+        {{record.Calories}}
+      </ion-col>
+      <ion-col class="record">
+        {{record.Protein}}
+      </ion-col>
+      <ion-col class="record">
+        {{record.Carbs}}
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  
+  </ion-card>
+  <ion-card>
+  <ion-card-header  style="color: darkred;font-weight: bold; text-align-last: center;">
+Overall
+  </ion-card-header>
+<ion-grid>
+  <ion-row>
+    <ion-col class="title2">
+      Calories left
+    </ion-col>
+    <ion-col class="title2">
+      Calories taken
+    </ion-col>
+    <ion-col class="title2">
+      Protein taken
+    </ion-col>
+  </ion-row>
+
+  <ion-row *ngIf="overall">
+    <ion-col  class="record2">
+      {{overall.calories_left.toString().indexOf(".")!==-1?overall.calories_left.toString().substring(0,overall.calories_left.toString().indexOf('.')):overall.calories_left.toString()}}
+    </ion-col>
+    <ion-col class="record2">
+      {{overall.calories_taken}}
+    </ion-col>
+    <ion-col class="record2">
+      {{overall.protein_taken}}
+    </ion-col>
+  </ion-row>
+</ion-grid>
+  </ion-card>
+
+</ion-content>

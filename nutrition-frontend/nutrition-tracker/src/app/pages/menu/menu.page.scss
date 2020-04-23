@@ -1,0 +1,19 @@
+.progress{
+    --background: url('../../../assets/progress.jpg')  0 0/100% 100% no-repeat;
+    --ion-background-color:transparent;
+}
+
+.add{
+    --background: url('../../../assets/add.jpg')  0 0/100% 100% no-repeat;
+    --ion-background-color:transparent;
+}
+.search{
+    --background: url('../../../assets/search.jpg')  0 0/100% 100% no-repeat;
+    --ion-background-color:transparent;
+
+}
+
+ion-card{
+    height: 250px;
+    width: 85%;
+}

@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="progress">
+          
+        </ion-card>
+        <ion-button [routerLink]="['../show-today-progress']" size="large" type="submit"  expand="block">see progress</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-card class="add">
+          
+        </ion-card>
+        <ion-button [routerLink]="['../enter-progress']" size="large" type="submit"  expand="block">add something you eated today</ion-button>
+      </ion-col>
+      <ion-col>
+      <ion-card class="search">
+          
+      </ion-card>
+      <ion-button [routerLink]="['../show-nutrition-value']" size="large" type="submit"  expand="block">search nutrition value of some food</ion-button>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+      <ion-button [routerLink]="['../user-info']" size="large" type="submit"  expand="block">update you info</ion-button>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button (click)="logout()" size="large" type="submit"  expand="block">Log out</ion-button>
+      </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-content>

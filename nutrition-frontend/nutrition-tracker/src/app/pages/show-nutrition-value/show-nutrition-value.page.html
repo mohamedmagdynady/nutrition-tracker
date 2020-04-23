@@ -1,0 +1,57 @@
+<ion-content fullscreen="true">
+
+  <!-- Animated Searchbar -->
+<ion-searchbar [(ngModel)]="foodsearch" (search)="log()" placeholder="Search a particular food !" animated autocomplete color="secondary"></ion-searchbar>
+
+<ion-card>
+
+  <ion-grid fixed=90% *ngIf="food">
+    <ion-row>
+      <ion-col>
+        <div>
+          Name
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          Calories
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          Protein
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          Carbs
+        </div>
+      </ion-col>
+    </ion-row>
+  <ion-row>
+      <ion-col>
+        <div>
+          {{foodnamesearched}}
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          {{food.Calories}}
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          {{food.Protein}}
+        </div>
+      </ion-col>
+      <ion-col>
+        <div>
+          {{food.Carbs}}
+        </div>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-card>
+</ion-content>

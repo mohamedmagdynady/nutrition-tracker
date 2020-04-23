@@ -1,0 +1,39 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Record intake
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style=" position: relative;left:24px;
+  top:120px;">
+  <!-- <ion-card-header>
+    <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    <ion-card-title>Card Title</ion-card-title>
+  </ion-card-header> -->
+  <form >
+  <ion-row >
+    <ion-col size="1">
+    </ion-col>
+    <ion-col size="3">
+      <ion-label>name</ion-label>
+
+      
+        
+        <ion-input [(ngModel)]="Name" name="Name" style="border-style: solid;border-width: medium;" type="text"></ion-input>
+    
+    </ion-col>
+    <ion-col size="3">
+    </ion-col>
+    <ion-col size="3">
+      <ion-label >quantity</ion-label>
+      <br>
+      <ion-input [(ngModel)]="quantity" name="quantity" required style="border-style: solid;border-width: medium;display:block;" type="number" min="0"></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-button size="small" (click)="submitrecord()" shape="round" style=" position: relative;left:83px;top:98px;">ENTER</ion-button>
+</form>
+</ion-card>
+</ion-content>

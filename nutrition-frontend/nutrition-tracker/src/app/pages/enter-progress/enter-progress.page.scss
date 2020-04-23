@@ -1,0 +1,32 @@
+ion-content{
+    --background: url('../../../assets/nutrition.jpg')  0 0/100% 100% no-repeat;
+    --ion-background-color:transparent;
+
+}
+
+ion-card{
+     height: 250px;
+     width: 85%;
+    background-color: powderblue;
+
+}
+
+ion-row{
+    position: relative;
+  top:66px;
+ 
+}
+
+ ion-label{
+    font-size: 15px;
+    font-style: italic;
+    color: black;
+    float:left; width: 250px; white-space: normal;
+    display:block; width: 100%;
+}
+
+ion-input{
+    background-color:cornsilk;
+    width: 75px;
+    
+}

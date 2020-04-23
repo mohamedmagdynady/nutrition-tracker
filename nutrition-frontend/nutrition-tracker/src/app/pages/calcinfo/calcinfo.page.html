@@ -1,0 +1,67 @@
+<ion-content >
+  <form  #form="ngForm" (ngSubmit)="register(form)">
+    <ion-grid>
+      <ion-row color="primary" justify-content-center>
+        <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+          <div text-center>
+            <h3>Please fill this info!</h3>
+          </div>
+          <div padding>
+            <ion-item>
+              <ion-input  name="name" type="text" placeholder="Name" ngModel > <ion-icon color="danger" name="star-outline"></ion-icon></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="email" type="email" placeholder="your@email.com" ngModel > <ion-icon color="danger" name="star-outline"></ion-icon></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="password" type="password" placeholder="Password" ngModel > <ion-icon color="danger" name="star-outline"></ion-icon></ion-input>
+            </ion-item>
+            <ion-item>  
+              <ion-label >Gender</ion-label>
+              <ion-select ngModel name="gender"  placeholder="Select One">
+                <ion-select-option value="Female">Female</ion-select-option>
+                <ion-select-option value="Male">Male</ion-select-option>
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              
+              <ion-input name="age" type="Number" min="0" placeholder="Age" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="weight" type="Number" min="0" placeholder="Weight kg" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="height" type="Number" min="0" placeholder="Height in cm" ngModel required></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-input name="body_fat_level"  type="Number" min="0" placeholder="bodyfat level in percentage (if you know it)" ngModel></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label>Activity Level</ion-label>
+              <ion-select ngModel name="activity_level" required placeholder="Select One">
+                <ion-select-option value="very low">very low</ion-select-option>
+                <ion-select-option value="low">low</ion-select-option>
+                <ion-select-option value="moderate">moderate</ion-select-option>
+                <ion-select-option value="high">high</ion-select-option>
+                <ion-select-option value="very high">very high</ion-select-option>
+                
+              </ion-select>
+            </ion-item>
+            <ion-item>
+              <ion-label>Goal</ion-label>
+              <ion-select ngModel name="goal" placeholder="Select One">
+                <ion-select-option value="decrease">decrease weight</ion-select-option>
+                <ion-select-option value="maintain">maintain</ion-select-option>
+                <ion-select-option value="increase">increase weight</ion-select-option>
+                
+              </ion-select>
+            </ion-item>
+          </div>
+          <div padding>
+            <ion-button  size="large" type="submit"  expand="block">Register</ion-button>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+</ion-content>
