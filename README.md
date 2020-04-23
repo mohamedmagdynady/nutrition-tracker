@@ -10,5 +10,5 @@ frontend:ionic
 backend: Node js
 database: Mongo db
 
-api is craeted in backend end that fetches, nutrition values of different nutrients.
+api is craeted in backend end that fetches, nutrition values of different nutrient, using food datasets.All these info are stores in database.no third-part was used by any means.
 also users and tracking of their info is done using the backend
